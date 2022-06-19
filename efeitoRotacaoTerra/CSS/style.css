@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/espaço.jpg);
+  background-size: cover;
+}
+
+.geral {
+  width: 960px;
+  height: 600px;
+  margin: auto;
+}
+
+.globe {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url(../img/mapa3.jpg);
+  background-repeat: repeat-x;
+  background-size: cover;
+  box-shadow: -25px -25px 25px #000 inset, 8px 8px 30px white inset,
+    0px 0px 20px #3a96ff;
+  animation: rotate 10s linear infinite;
+  margin: 150px 0 0 350px; /*alinhar ao centro da imagem*/
+  transition: transform 1s ease-out;
+}
+
+@keyframes rotate {
+  to {
+    background-position: 100%;
+  }
+}
